@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sign in | JobConnect</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+    <main class="auth-page">
+        <section class="auth-intro"><a class="brand" href="index.html">Job<span>Connect</span></a>
+            <div>
+                <div class="eyebrow" style="color:var(--lime)">Welcome back</div>
+                <h1>Your next opportunity is closer than you think.</h1>
+                <p>Keep your search moving with one calm, focused workspace.</p>
+            </div>
+        </section>
+        <section class="auth-form">
+            <div class="panel">
+                <h1>Sign in</h1>
+                <p class="muted">Access your JobConnect workspace.</p>
+                <form class="form" data-auth="login">
+                    <div class="field"><label>Email</label><input type="email" name="email" required
+                            placeholder="you@example.com"></div>
+                    <div class="field"><label>Password</label><input type="password" name="password" required
+                            placeholder="Your password"></div><button class="btn btn-primary">Sign in</button>
+                </form>
+                <p class="form-note">New to JobConnect? <a href="register.html">Create an account</a></p>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="js/auth.js"></script>
+</body>
+
+</html>

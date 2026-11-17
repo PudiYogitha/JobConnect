@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Profile | JobConnect</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/seeker.css">
+</head>
+
+<body data-page="profile">
+    <header class="topbar"><a class="brand" href="dashboard.html">Job<span>Connect</span></a>
+        <nav class="nav"><a href="jobs.html">Find jobs</a><a href="applications.html">Applications</a><a class="active"
+                href="profile.html">Profile</a><a href="../index.html" data-logout>Log out</a></nav>
+    </header>
+    <main class="page">
+        <div class="content-head">
+            <div>
+                <div class="eyebrow">Your story</div>
+                <h1>Profile</h1>
+            </div>
+        </div>
+        <form class="panel form" data-profile>
+            <div class="two">
+                <div class="field"><label>Name</label><input name="name" required></div>
+                <div class="field"><label>Phone</label><input name="phone" placeholder="+1 555 000 0000"></div>
+            </div>
+            <div class="two">
+                <div class="field"><label>Qualification</label><input name="qualification"
+                        placeholder="BSc Computer Science"></div>
+                <div class="field"><label>Experience in years</label><input type="number" name="experience" min="0">
+                </div>
+            </div>
+            <div class="field"><label>Skills</label><input name="skills" placeholder="React, Node.js, MongoDB"></div>
+            <div class="field"><label>Resume URL</label><input name="resumeUrl" type="url" placeholder="https://...">
+            </div><button class="btn btn-primary">Save profile</button>
+        </form>
+    </main>
+    <script type="module" src="../js/seeker.js"></script>
+</body>
+
+</html>

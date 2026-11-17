@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Applicants | JobConnect</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/recruiter.css">
+</head>
+
+<body data-page="applicants">
+    <header class="topbar"><a class="brand" href="dashboard.html">Job<span>Connect</span></a>
+        <nav class="nav"><a href="post-job.html">Post a role</a><a href="my-jobs.html">My jobs</a><a class="active"
+                href="applicants.html">Applicants</a><a href="profile.html">Company profile</a><a
+                href="../index.html" data-logout>Log out</a></nav>
+    </header>
+    <main class="page">
+        <div class="content-head">
+            <div>
+                <div class="eyebrow">Candidate pipeline</div>
+                <h1>Applicants</h1>
+            </div>
+        </div>
+        <section class="panel table-wrap">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Candidate</th>
+                        <th>Role</th>
+                        <th>Experience</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody data-applicants></tbody>
+            </table>
+        </section>
+    </main>
+    <script type="module" src="../js/recruiter.js"></script>
+</body>
+
+</html>

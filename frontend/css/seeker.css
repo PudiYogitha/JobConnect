@@ -1,0 +1,28 @@
+.seeker-accent {
+    color: #42612c
+}
+
+.searchbar {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 120px auto;
+    gap: 10px;
+    margin-bottom: 20px
+}
+
+.searchbar input,
+.searchbar select {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 12px;
+    background: #fff
+}
+
+@media(max-width:800px) {
+    .searchbar {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .searchbar input:first-child {
+        grid-column: 1/-1
+    }
+}

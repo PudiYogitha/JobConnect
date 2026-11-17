@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Create account | JobConnect</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+    <main class="auth-page">
+        <section class="auth-intro"><a class="brand" href="index.html">Job<span>Connect</span></a>
+            <div>
+                <div class="eyebrow" style="color:var(--lime)">Make your move</div>
+                <h1>Bring the right people into the same room.</h1>
+                <p>Build a profile that feels like you, then find opportunities that make sense.</p>
+            </div>
+        </section>
+        <section class="auth-form">
+            <div class="panel">
+                <h1>Create account</h1>
+                <p class="muted">Choose how you will use JobConnect.</p>
+                <form class="form" data-auth="register">
+                    <div class="field"><label>Full name</label><input name="name" required placeholder="Alex Morgan">
+                    </div>
+                    <div class="field"><label>Email</label><input type="email" name="email" required
+                            placeholder="you@example.com"></div>
+                    <div class="field"><label>Password</label><input type="password" name="password" minlength="6"
+                            required placeholder="At least 6 characters"></div>
+                    <div class="field"><label>I am joining as</label>
+                        <div class="role-select"><label><input type="radio" name="role" value="seeker" checked> Job
+                                seeker</label><label><input type="radio" name="role" value="recruiter">
+                                Recruiter</label></div>
+                    </div><button class="btn btn-primary">Create account</button>
+                </form>
+                <p class="form-note">Already have an account? <a href="login.html">Sign in</a></p>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="js/auth.js"></script>
+</body>
+
+</html>

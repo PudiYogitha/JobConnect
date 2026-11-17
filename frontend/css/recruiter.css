@@ -1,0 +1,30 @@
+.metric-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 28px
+}
+
+.metric strong {
+    font: 800 34px Manrope;
+    display: block;
+    color: var(--green)
+}
+
+.metric span {
+    color: var(--muted);
+    font-size: 13px
+}
+
+.status-select {
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    padding: 7px;
+    background: #fff
+}
+
+@media(max-width:650px) {
+    .metric-grid {
+        grid-template-columns: 1fr
+    }
+}

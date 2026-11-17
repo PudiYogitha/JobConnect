@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Find jobs | JobConnect</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/seeker.css">
+</head>
+
+<body data-page="jobs">
+    <header class="topbar"><a class="brand" href="dashboard.html">Job<span>Connect</span></a>
+        <nav class="nav"><a class="active" href="jobs.html">Find jobs</a><a href="applications.html">Applications</a><a
+                href="profile.html">Profile</a><a href="../index.html" data-logout>Log out</a></nav>
+    </header>
+    <main class="page">
+        <div class="content-head">
+            <div>
+                <div class="eyebrow">Discover</div>
+                <h1>Open roles</h1>
+            </div><span class="muted">Search by what matters to you.</span>
+        </div>
+        <form class="panel searchbar" data-search><input name="title" placeholder="Role or keyword"><input
+                name="location" placeholder="Location"><input name="skill" placeholder="Skill"><select name="jobType">
+                <option value="">Any job type</option>
+                <option>Full-time</option>
+                <option>Part-time</option>
+                <option>Contract</option>
+                <option>Remote</option>
+            </select><input name="experience" type="number" min="0" placeholder="Max years"><button
+                class="btn btn-primary">Search</button></form>
+        <section class="grid" data-jobs></section>
+    </main>
+    <script type="module" src="../js/seeker.js"></script>
+</body>
+
+</html>

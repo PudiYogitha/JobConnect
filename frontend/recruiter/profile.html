@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Company profile | JobConnect</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/recruiter.css">
+</head>
+
+<body data-page="profile">
+    <header class="topbar"><a class="brand" href="dashboard.html">Job<span>Connect</span></a>
+        <nav class="nav"><a href="post-job.html">Post a role</a><a href="my-jobs.html">My jobs</a><a
+                href="applicants.html">Applicants</a><a class="active" href="profile.html">Company profile</a><a
+                href="../index.html" data-logout>Log out</a></nav>
+    </header>
+    <main class="page">
+        <div class="content-head">
+            <div>
+                <div class="eyebrow">Your company</div>
+                <h1>Company profile</h1>
+            </div>
+        </div>
+        <form class="panel form" data-company-profile>
+            <div class="field"><label>Company name</label><input name="companyName" placeholder="Northstar Studio">
+            </div>
+            <div class="field"><label>About the company</label><textarea name="companyDescription"
+                    placeholder="Tell candidates what makes your team worth joining."></textarea></div><button
+                class="btn btn-primary">Save profile</button>
+        </form>
+    </main>
+    <script type="module" src="../js/recruiter.js"></script>
+</body>
+
+</html>

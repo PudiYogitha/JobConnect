@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>My jobs | JobConnect</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/recruiter.css">
+</head>
+
+<body data-page="my-jobs">
+    <header class="topbar"><a class="brand" href="dashboard.html">Job<span>Connect</span></a>
+        <nav class="nav"><a href="post-job.html">Post a role</a><a class="active" href="my-jobs.html">My jobs</a><a
+                href="applicants.html">Applicants</a><a href="profile.html">Company profile</a><a
+                href="../index.html" data-logout>Log out</a></nav>
+    </header>
+    <main class="page">
+        <div class="content-head">
+            <div>
+                <div class="eyebrow">Your roles</div>
+                <h1>My jobs</h1>
+            </div><a class="btn btn-primary" href="post-job.html">Post a role</a>
+        </div>
+        <section class="grid" data-jobs></section>
+    </main>
+    <script type="module" src="../js/recruiter.js"></script>
+</body>
+
+</html>

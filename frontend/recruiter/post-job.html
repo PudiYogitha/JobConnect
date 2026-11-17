@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Post a job | JobConnect</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/recruiter.css">
+</head>
+
+<body data-page="post-job">
+    <header class="topbar"><a class="brand" href="dashboard.html">Job<span>Connect</span></a>
+        <nav class="nav"><a class="active" href="post-job.html">Post a role</a><a href="my-jobs.html">My jobs</a><a
+                href="applicants.html">Applicants</a><a href="profile.html">Company profile</a><a
+                href="../index.html" data-logout>Log out</a></nav>
+    </header>
+    <main class="page">
+        <div class="content-head">
+            <div>
+                <div class="eyebrow">Create opportunity</div>
+                <h1>Post a role</h1>
+            </div>
+        </div>
+        <form class="panel form" data-job-form>
+            <div class="two">
+                <div class="field"><label>Job title</label><input name="title" required
+                        placeholder="Senior Product Designer"></div>
+                <div class="field"><label>Company</label><input name="company" required placeholder="Northstar Studio">
+                </div>
+            </div>
+            <div class="two">
+                <div class="field"><label>Location</label><input name="location" required
+                        placeholder="New York or Remote"></div>
+                <div class="field"><label>Job type</label><select name="jobType" required>
+                        <option>Full-time</option>
+                        <option>Part-time</option>
+                        <option>Contract</option>
+                        <option>Remote</option>
+                    </select></div>
+            </div>
+            <div class="field"><label>Description</label><textarea name="description" required
+                    placeholder="What will this person own? What makes the team special?"></textarea></div>
+            <div class="field"><label>Required skills</label><input name="skills"
+                    placeholder="Figma, Research, Prototyping"></div>
+            <div class="two">
+                <div class="field"><label>Minimum experience</label><input type="number" name="experience" min="0"
+                        required value="0"></div>
+                <div class="field"><label>Salary min / max</label>
+                    <div class="two"><input type="number" name="salaryMin" placeholder="60000"><input type="number"
+                            name="salaryMax" placeholder="90000"></div>
+                </div>
+            </div><button class="btn btn-primary">Publish role</button>
+        </form>
+    </main>
+    <script type="module" src="../js/recruiter.js"></script>
+</body>
+
+</html>
